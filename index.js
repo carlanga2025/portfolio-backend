@@ -48,6 +48,10 @@ app.post('/enviar-correo', (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Servidor funcionando 🚀");
+});
+
 // Inicia el servidor
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
